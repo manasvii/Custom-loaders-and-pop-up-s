@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manasvi.androidutilities.LoaderActivity">
+
+    <com.agrawalsuneet.loaderspack.loaders.CircularSticksLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        app:circularsticks_animDuration="100"
+        app:circularsticks_firstShadowColor="#aa000000"
+        app:circularsticks_innerCircleRadius="50dp"
+        app:circularsticks_noOfSticks="32"
+        app:circularsticks_outerCircleRadius="80dp"
+        app:circularsticks_secondShadowColor="#77000000"
+        app:circularsticks_selectedStickColor="@color/black"
+        app:circularsticks_showRunningShadow="true"
+        app:circularsticks_stickColor="@color/grey"
+        app:circularsticks_viewBackgroundColor="@color/white" />
+
+
+    <com.agrawalsuneet.loaderspack.loaders.CurvesLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:curves_animDuration="1000"
+        app:curves_curveColor="@color/blue"
+        android:visibility="gone"
+        app:curves_curveSweepAngle="160"
+        app:curves_curveWidth="5dp"
+        app:curves_distanceBetweenCurves="5dp"
+        app:curves_interpolator="@android:anim/linear_interpolator"
+        app:curves_noOfCurves="5"
+        app:curves_outermostCurveRadius="80dp" />
+
+</LinearLayout>
